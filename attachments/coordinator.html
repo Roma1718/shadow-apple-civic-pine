@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block title %}Координатор · {{ config.SITE_NAME }}{% endblock %}
+{% block content %}
+<section class="page-header">
+  <div class="wrap">
+    <div class="eyebrow">Кабинет координатора</div>
+    <h1>Муниципальная и межведомственная координация</h1>
+    <p>Заявки, пользователи, статусы сопровождения.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap dashboard-grid coordinator-grid">
+    <div class="detail-box span-2">
+      <h3>Заявки</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Пользователь</th>
+              <th>Роль</th>
+              <th>Муниципалитет</th>
+              <th>Тип</th>
+              <th>Запрос</th>
+              <th>Статус</th>
+              <th>Обновить</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in applications %}
+            <tr>
+              <td>{{ item['full_name'] }}</td>
+              <td>{{ role_labels[item['role']] }}</td>
+              <td>{{ item['municipality'] }}</td>
+              <td>{{ item['type'] }}</td>
+              <td>{{ item['message'] }}</td>
+              <td><span class="status {{ item['status'] }}">{{ item['status'] }}</span></td>
+              <td>
+                <form method="post" action="{{ url_for('update_status', app_id=item['id']) }}">
+                  <select name="status">
+                    <option value="new">new</option>
+                    <option value="in_progress">in_progress</option>
+                    <option value="done">done</option>
+                  </select>
+                  <button class="btn btn-small" type="submit">Сохранить</button>
+                </form>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="detail-box">
+      <h3>Пользователи</h3>
+      <ul class="clean-list compact">
+        {% for user in users %}
+        <li><strong>{{ user['full_name'] }}</strong><br>{{ role_labels[user['role']] }} · {{ user['municipality'] }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

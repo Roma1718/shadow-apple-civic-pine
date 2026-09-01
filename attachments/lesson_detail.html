@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}{{ lesson['title'] }} · Уроки{% endblock %}
+{% block content %}
+<section class="page-header">
+  <div class="wrap">
+    <div class="eyebrow">Урок</div>
+    <h1>{{ lesson['title'] }}</h1>
+    <p>{{ lesson['age_group'] }} · {{ lesson['duration'] }} · {{ lesson['format'] }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-columns detail-layout">
+    <article class="prose detail-box">
+      {% for paragraph in lesson['body'].split('\n\n') %}
+        <p>{{ paragraph }}</p>
+      {% endfor %}
+    </article>
+    <aside class="detail-box">
+      <h3>Материалы</h3>
+      <ul class="clean-list">
+        {% for material in materials %}
+        <li>{{ material }}</li>
+        {% endfor %}
+      </ul>
+      <a class="btn btn-primary" href="{{ url_for('register') }}">Подключить школу</a>
+    </aside>
+  </div>
+</section>
+{% endblock %}

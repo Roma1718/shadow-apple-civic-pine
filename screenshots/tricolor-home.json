@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "СВОих девчонок не бросаем!",
+      "hasCanvas": false,
+      "bodyTextLen": 4574,
+      "bodyTextHash": "f05c8c375bd797d6cacb173f449790e5d2ea420251fc5be5c2ce74a44b74e835",
+      "bodyTextPrefix": "СВОих девчонок не бросаем! АНО «Дирекция социальной архитектуры»",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/tricolor-home.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "СВОих девчонок не бросаем!",
+      "hasCanvas": false,
+      "bodyTextLen": 4479,
+      "bodyTextHash": "83c8097ba2b4c40889245f89b946db43ad1f5b913f13c6aa48065dacd1b056f9",
+      "bodyTextPrefix": "СВОих девчонок не бросаем! АНО «Дирекция социальной архитектуры»",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/tricolor-home-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/tricolor-home.json"
+}

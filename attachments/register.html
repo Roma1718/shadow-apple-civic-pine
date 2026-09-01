@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Регистрация · {{ config.SITE_NAME }}{% endblock %}
+{% block content %}
+<section class="page-header">
+  <div class="wrap">
+    <div class="eyebrow">Регистрация</div>
+    <h1>Подключение к порталу</h1>
+    <p>Новая семья, педагог, волонтёр, координатор или партнёр.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap form-layout one">
+    <form class="form-card wide-form" method="post">
+      <label>ФИО
+        <input type="text" name="full_name" required>
+      </label>
+      <label>Почта
+        <input type="email" name="email" required>
+      </label>
+      <label>Пароль
+        <input type="password" name="password" required>
+      </label>
+      <label>Роль
+        <select name="role">
+          <option value="family">Семья</option>
+          <option value="teacher">Педагог</option>
+          <option value="volunteer">Волонтёр</option>
+          <option value="partner">Партнёр</option>
+        </select>
+      </label>
+      <label>Муниципалитет
+        <input type="text" name="municipality" placeholder="Чебоксары">
+      </label>
+      <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+</section>
+{% endblock %}

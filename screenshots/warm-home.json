@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "СВОих девчонок не бросаем!",
+      "hasCanvas": false,
+      "bodyTextLen": 5544,
+      "bodyTextHash": "a676d2d342476ea55fa76a9a61c81d485f5d2da0e480aeaa7559e7219fc115a1",
+      "bodyTextPrefix": "СВОих девчонок не бросаем! Пилотный портал · Чувашская Республик",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/warm-home.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "СВОих девчонок не бросаем!",
+      "hasCanvas": false,
+      "bodyTextLen": 5452,
+      "bodyTextHash": "72b6564d11cc43aa773e1b7704cc434e0c1d37baafe0c00e497f3bb1c2ed4ca2",
+      "bodyTextPrefix": "СВОих девчонок не бросаем! Пилотный портал · Чувашская Республик",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/warm-home-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/warm-home.json"
+}

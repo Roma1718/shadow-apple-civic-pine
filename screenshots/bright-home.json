@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "СВОих девчонок не бросаем!",
+      "hasCanvas": false,
+      "bodyTextLen": 4910,
+      "bodyTextHash": "fbb364fab015bad94e3781ea679ecacb51ac418fcd82a82db7aa4778a0227f30",
+      "bodyTextPrefix": "СВОих девчонок не бросаем! АНО «Дирекция социальной архитектуры»",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/bright-home.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "СВОих девчонок не бросаем!",
+      "hasCanvas": false,
+      "bodyTextLen": 4815,
+      "bodyTextHash": "66d8e1dc5ae9a38b775bda0a7b34f13fee0cb3a7ee24b4b2823571f3b7625a2d",
+      "bodyTextPrefix": "СВОих девчонок не бросаем! АНО «Дирекция социальной архитектуры»",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/bright-home-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/bright-home.json"
+}

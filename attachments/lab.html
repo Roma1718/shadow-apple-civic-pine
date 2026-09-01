@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Лаборатория · {{ config.SITE_NAME }}{% endblock %}
+{% block content %}
+<section class="page-header">
+  <div class="wrap">
+    <div class="eyebrow">Лаборатория социальной архитектуры</div>
+    <h1>Мозговой центр пилота</h1>
+    <p>Здесь собираются команды университетов, школ, музеев, техцентров и общественных организаций.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-columns">
+    <div>
+      <div class="section-head left">
+        <h2>Треки работы</h2>
+      </div>
+      <ol class="track-list">
+        {% for track in tracks %}
+        <li>{{ track }}</li>
+        {% endfor %}
+      </ol>
+    </div>
+    <aside class="callout">
+      <h3>Результат лаборатории</h3>
+      <p>Стратегия проекта, визуальная модель, прототип цифровой платформы и пилотный просветительский демопроект.</p>
+    </aside>
+  </div>
+</section>
+{% endblock %}
